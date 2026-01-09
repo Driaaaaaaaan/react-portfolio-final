@@ -1,4 +1,3 @@
-
 import logo from "../assets/logo.png";
 import { useState } from "react";
 import { X, Menu} from "lucide-react";
@@ -12,7 +11,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-18 items-center">
           {/* Logo */}
-          <a href="/hero">
+          <a href="#hero">
             <img src={logo} alt="Logo" className="h-12 w-12" />
           </a>
 

@@ -14,7 +14,7 @@ const Hero = () => {
         {/* LEFT SIDE - TEXT */}
         <div className="text-white space-y-6 mt-20">
           <p className="p-0 m-0 font-sans">Hi, I’m </p>
-          <h1 className="text-6xl md:text-9xl font-bold leading-tight mb-3">
+          <h1 className="text-6xl md:text-7xl lg:text-9xl font-bold leading-tight mb-3">
             <span className="text-emerald-300 pacifico-regular ">
               Drian Cale
             </span>
@@ -71,7 +71,7 @@ const Hero = () => {
 
         {/* RIGHT SIDE - IMAGE / VISUAL */}
         <motion.div
-          className="relative w-64 h-64 md:w-100 md:h-100 lg:w-120 lg:h-120 mt-2 md:ml-30 md:flex items-center justify-center hidden"
+          className="relative w-58 h-58 md:w-80 md:h-80 lg:w-120 lg:h-120 mt-2 md:ml-20 md:flex items-center justify-center hidden"
           animate={{
             y: [0, -15, 0], // move up 20px then back down
           }}
