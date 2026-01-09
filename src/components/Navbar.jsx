@@ -78,6 +78,7 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+    
   );
 };
 
