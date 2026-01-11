@@ -22,9 +22,6 @@ import { SiCanva } from "react-icons/si";
 import { SiXampp } from "react-icons/si";
 import { SiLaragon } from "react-icons/si";
 
-
-
-
 const experiences = [
   {
     role: "IT Department Intern",
@@ -50,7 +47,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="scroll-mt-20 bg-linear-to-b from-emerald-700 to-emerald-600 min-h-screen"
+      className="scroll-mt-20 bg-linear-to-b from-emerald-700 to-emerald-600 min-h-screen w-full"
     >
       <div className="grid grid-cols-1 p-4 md:p-10 space-x-8 space-y-8 lg:grid-cols-2 md:grid-cols-1 gap-4">
         {/* About Me Section */}
@@ -153,7 +150,7 @@ const About = () => {
         Tech Stack
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 h-full text-gray-900 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-4 h-full text-gray-900 mt-6">
         <div className="rounded-xl backdrop-blur-9xl bg-gray-900/50 p-5 shadow-2xl">
           <h1 className="flex justify-center text-white text-5xl font-medium">
             Frontend
@@ -161,32 +158,39 @@ const About = () => {
           <div className="grid grid-cols-3  text-xl mt-5 text-center">
             <div className=" mx-auto gap-8 space-y-8">
               <a href="https://www.w3schools.com/html/html_intro.asp">
-                <FaHtml5 className="text-8xl text-center justify-center mb-4 text-orange-500" />
+                <FaHtml5 className="text-8xl text-center justify-center  text-orange-500" />
+                <h3 className="text-white">HTML</h3>
               </a>
               <a href="https://www.w3schools.com/html/html_intro.asp">
-                <TbBrandVite className="text-8xl text-center justify-center mb-4 text-purple-500" />
+                <TbBrandVite className="text-8xl text-center justify-center  text-purple-500" />
+                <h3 className="text-white">Vite</h3>
               </a>
               <a href="https://www.w3schools.com/html/html_intro.asp">
-                <FaBootstrap className="text-8xl text-center justify-center mb4 text-blue-800" />
+                <FaBootstrap className="text-8xl text-center justify-center text-blue-800" />
+                <h3 className="text-white">Bootstrap</h3>
               </a>
             </div>
 
             <div className="mx-auto gap-8 space-y-8">
               <a href="https://www.w3schools.com/css/css_intro.asp">
-                <FaCss3Alt className="text-8xl text-center justify-center mb-4 text-blue-600" />
+                <FaCss3Alt className="text-8xl text-center justify-center  text-blue-600" />
+                <h3 className="text-white">CSS</h3>
               </a>
               <a href="https://www.w3schools.com/css/css_intro.asp">
-                <FaReact className="text-8xl text-center justify-center mb-4 text-blue-500" />
+                <FaReact className="text-8xl text-center justify-center  text-blue-500" />
+                <h3 className="text-white">React</h3>
               </a>
             </div>
 
-            <div className="mx-auto gap-8 space-y-8">
+            <div className="mx-auto gap-8 space-y-0">
               <a href="https://www.w3schools.com/html/html_intro.asp">
-                <IoLogoJavascript className="text-8xl text-center justify-center mb-4 text-yellow-400" />
+                <IoLogoJavascript className="text-8xl text-center justify-center  text-yellow-400" />
               </a>
+              <h3 className="text-white">Javascript</h3>
               <a href="https://www.w3schools.com/html/html_intro.asp">
-                <RiTailwindCssFill className="text-8xl text-center justify-center mb-4 text-blue-400" />
+                <RiTailwindCssFill className="text-8xl text-center justify-center  text-blue-400" />
               </a>
+              <h3 className="text-white">Tailwind</h3>
             </div>
           </div>
         </div>
@@ -195,71 +199,76 @@ const About = () => {
             Backend
           </h1>
           <div className="grid grid-cols-3">
-
             <div className="mx-auto gap-8 space-y-8">
               <a href="">
-                  <FaPhp className="text-8xl text-center mb-4 text-blue-400"/>
-                </a>
+                <FaPhp className="text-8xl text-center text-blue-400" />
+              </a>
+              <h3 className="text-white text-center">PHP</h3>
             </div>
 
             <div className="mx-auto gap-8 space-y-8">
               <a href="">
-                  <FaLaravel  className="text-7xl text-center mb-4 text-orange-600"/>
-                </a>
+                <FaLaravel className="text-7xl text-center mt-4 text-orange-600" />
+              </a>
+              <h3 className="text-white mt-3 text-center">Laravel</h3>
             </div>
 
             <div className="mx-auto gap-8 space-y-8">
               <a href="">
-                  <SiMysql   className="text-7xl text-center mb-4 text-blue-200"/>
-                </a>
+                <SiMysql className="text-7xl text-center mt-4 mb-3 text-blue-200" />
+              </a>
+              <h3 className="text-white text-center">MySQL</h3>
             </div>
-
-          </div>   
+          </div>
         </div>
 
-        <div className="bg-gray-900/50 rounded-xl shadow-xl backdrop-blur-9xl p-5">
-          <h1 className="text-center text-white text-4xl mb-4 font-medium">
-            Tools & Others
+        <div className="rounded-xl backdrop-blur-9xl bg-gray-900/50 p-5 shadow-2xl">
+          <h1 className="flex justify-center text-white text-4xl font-medium">
+            Tools & Other
           </h1>
-          <div className="grid grid-cols-3">
-
-            <div className="mx-auto gap-8 space-y-8">
-              <a href="">
-                  <FaGithub className="text-8xl text-center mb-4 text-gray-900"/>
-                </a>
-                <a href="">
-                  <VscVscode className="text-8xl text-center mb-4 text-blue-600"/>
-                </a>
-                <a href="">
-                  <SiXampp className="text-7xl text-center mb-4 text-orange-500"/>
-                </a>
+          <div className="grid grid-cols-3  text-xl mt-5 text-center mx-auto items-center justify-center">
+            <div className=" mx-auto">
+              <a href="https://www.w3schools.com/html/html_intro.asp">
+                <FaGithub className="text-7xl text-center justify-center ml-3  text-gray-900" />
+                <h3 className="text-white mb-4">Github</h3>
+              </a>
+              <a href="https://www.w3schools.com/html/html_intro.asp">
+                <FaWordpress className="text-7xl text-center justify-center ml-3  text-blue-400" />
+                <h3 className="text-white mb-4">WordPress</h3>
+              </a>
+              <a href="https://www.w3schools.com/html/html_intro.asp">
+                <SiCanva className="text-7xl text-center justify-center ml-3 text-indigo-600" />
+              </a>
+              <h3 className="text-white mb-4">Canva</h3>
             </div>
 
             <div className="mx-auto gap-8 space-y-8">
-              <a href="">
-                  <FaNpm   className="text-7xl text-center mb-11 text-red-600"/>
-                </a>
-                <a href="">
-                  <FaWordpress className="text-7xl text-center mt-4 mb-4 text-blue-400"/>
-                </a>
-                <a href="">
-                  <SiLaragon className="text-7xl text-center mt-8 mb-4 text-blue-400"/>
-                </a>
+              <a href="https://www.w3schools.com/css/css_intro.asp">
+                <VscVscode className="text-7xl text-center justify-center  text-blue-600" />
+                <h3 className="text-white mb-4">VS Code</h3>
+              </a>
+              <a href="https://www.w3schools.com/css/css_intro.asp">
+                <SiLaragon className="text-7xl text-center justify-center  text-blue-500" />
+                <h3 className="text-white mb-4">Laragon</h3>
+              </a>
+              <a href="https://www.w3schools.com/css/css_intro.asp">
+                <FaFigma className="text-7xl text-center justify-center  text-gray-950" />
+                <h3 className="text-white mb-4">Figma</h3>
+              </a>
             </div>
 
-            <div className="mx-auto gap-8 space-y-8">
-              <a href="">
-                  <FaFigma className="text-7xl text-center mb-4 text-gray-950"/>
-                </a>
-              <a href="">
-                  <SiCanva className="text-7xl text-center mb-4 text-indigo-600 mt-10"/>
-                </a>
+            <div className="mx-auto -mt-25 gap-3 space-y-8">
+              <a href="https://www.w3schools.com/html/html_intro.asp">
+                <SiXampp className="text-7xl text-center justify-center  text-orange-400" />
+                <h3 className="text-white mb-4">XAMPP</h3>
+              </a>
+              <a href="https://www.w3schools.com/html/html_intro.asp">
+                <FaNpm className="text-7xl text-center justify-center  text-red-600" />
+                <h3 className="text-white mb-4">npm</h3>
+              </a>
             </div>
-
-          </div>   
+          </div>
         </div>
-
-        
       </div>
     </section>
   );
