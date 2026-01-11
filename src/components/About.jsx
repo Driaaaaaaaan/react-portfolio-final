@@ -4,6 +4,26 @@ import Cvisnet1 from "../assets/cvisnet1.jpg";
 import Cvisnet2 from "../assets/cvisnet2.jpg";
 import Cvisnet3 from "../assets/cvisnet3.jpg";
 import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { TbBrandVite } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa6";
+import { FaLaravel } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { FaNpm } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { FaWordpress } from "react-icons/fa";
+import { SiCanva } from "react-icons/si";
+import { SiXampp } from "react-icons/si";
+import { SiLaragon } from "react-icons/si";
+
+
+
 
 const experiences = [
   {
@@ -35,11 +55,11 @@ const About = () => {
       <div className="grid grid-cols-1 p-4 md:p-10 space-x-8 space-y-8 lg:grid-cols-2 md:grid-cols-1 gap-4">
         {/* About Me Section */}
         <div className="flex flex-col bg-emerald-900 h-full w-full md:w-full rounded-xl shadow-2xl py-5  text-white px-5 md:px-10">
-          <h1 className="text-emerald-200 text-3xl font-medium mb-6 md:text-6xl">
+          <h1 className="text-white text-3xl font-medium mb-6 md:text-6xl">
             About me
           </h1>
 
-          <p className="leading-relaxed text-base indent-8 text-justify mb-3 md:text-2xs">
+          <p className="leading-relaxed text-base indent-8 text-justify mb-3 md:text-2xs text-emerald-100">
             I am a Bachelor of Science in Computer Science graduate from Biliran
             Province State University with a strong interest in web development
             and software engineering. I enjoy turning ideas into functional,
@@ -78,7 +98,7 @@ const About = () => {
         </div>
 
         {/* Experience Section */}
-        <div className="bg-emerald-800 p-6 rounded-xl shadow-lg max-w-full mx-auto">
+        <div className="bg-emerald-900 p-6 rounded-xl shadow-lg max-w-full mx-auto">
           <h1 className="text-white text-4xl text-center font-medium mb-6">
             Experience
           </h1>
@@ -129,39 +149,117 @@ const About = () => {
         </div>
       )}
 
-      <h1 className="text-white text-5xl font-medium flex items-center justify-center">
+      <h1 className="text-white text-6xl md:text-7xl font-medium flex items-center justify-center mt-15">
         Tech Stack
       </h1>
 
-      <div className="grid grid-cols-3 gap-4 p-4 h-full text-gray-900">
-        <div className="bg-white-300 rounded-md backdrop-blur-3xl bg-green-300 opacity-40 border border-gray-100 p-4">
-          <h1 className="flex justify-center">Frontend</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 h-full text-gray-900 mt-6">
+        <div className="rounded-xl backdrop-blur-9xl bg-gray-900/50 p-5 shadow-2xl">
+          <h1 className="flex justify-center text-white text-5xl font-medium">
+            Frontend
+          </h1>
           <div className="grid grid-cols-3  text-xl mt-5 text-center">
             <div className=" mx-auto gap-8 space-y-8">
               <a href="https://www.w3schools.com/html/html_intro.asp">
-                <FaHtml5 className="text-5xl text-center justify-center" />
+                <FaHtml5 className="text-8xl text-center justify-center mb-4 text-orange-500" />
               </a>
               <a href="https://www.w3schools.com/html/html_intro.asp">
-                <FaHtml5 className="text-5xl text-center justify-center" />
+                <TbBrandVite className="text-8xl text-center justify-center mb-4 text-purple-500" />
               </a>
               <a href="https://www.w3schools.com/html/html_intro.asp">
-                <FaHtml5 className="text-5xl text-center justify-center" />
+                <FaBootstrap className="text-8xl text-center justify-center mb4 text-blue-800" />
               </a>
             </div>
-            <div>
-              <h1>col 2</h1>
+
+            <div className="mx-auto gap-8 space-y-8">
+              <a href="https://www.w3schools.com/css/css_intro.asp">
+                <FaCss3Alt className="text-8xl text-center justify-center mb-4 text-blue-600" />
+              </a>
+              <a href="https://www.w3schools.com/css/css_intro.asp">
+                <FaReact className="text-8xl text-center justify-center mb-4 text-blue-500" />
+              </a>
             </div>
-            <div>
-              <h1>col 3</h1>
+
+            <div className="mx-auto gap-8 space-y-8">
+              <a href="https://www.w3schools.com/html/html_intro.asp">
+                <IoLogoJavascript className="text-8xl text-center justify-center mb-4 text-yellow-400" />
+              </a>
+              <a href="https://www.w3schools.com/html/html_intro.asp">
+                <RiTailwindCssFill className="text-8xl text-center justify-center mb-4 text-blue-400" />
+              </a>
             </div>
           </div>
         </div>
-        <div className="bg-red-700">
-          <h1>col 2</h1>
+        <div className="bg-gray-900/50 rounded-xl shadow-xl backdrop-blur-9xl p-5">
+          <h1 className="text-center text-white text-4xl mb-4 font-medium">
+            Backend
+          </h1>
+          <div className="grid grid-cols-3">
+
+            <div className="mx-auto gap-8 space-y-8">
+              <a href="">
+                  <FaPhp className="text-8xl text-center mb-4 text-blue-400"/>
+                </a>
+            </div>
+
+            <div className="mx-auto gap-8 space-y-8">
+              <a href="">
+                  <FaLaravel  className="text-7xl text-center mb-4 text-orange-600"/>
+                </a>
+            </div>
+
+            <div className="mx-auto gap-8 space-y-8">
+              <a href="">
+                  <SiMysql   className="text-7xl text-center mb-4 text-blue-200"/>
+                </a>
+            </div>
+
+          </div>   
         </div>
-        <div className="bg-blue-700">
-          <h1>col 3</h1>
+
+        <div className="bg-gray-900/50 rounded-xl shadow-xl backdrop-blur-9xl p-5">
+          <h1 className="text-center text-white text-4xl mb-4 font-medium">
+            Tools & Others
+          </h1>
+          <div className="grid grid-cols-3">
+
+            <div className="mx-auto gap-8 space-y-8">
+              <a href="">
+                  <FaGithub className="text-8xl text-center mb-4 text-gray-900"/>
+                </a>
+                <a href="">
+                  <VscVscode className="text-8xl text-center mb-4 text-blue-600"/>
+                </a>
+                <a href="">
+                  <SiXampp className="text-7xl text-center mb-4 text-orange-500"/>
+                </a>
+            </div>
+
+            <div className="mx-auto gap-8 space-y-8">
+              <a href="">
+                  <FaNpm   className="text-7xl text-center mb-11 text-red-600"/>
+                </a>
+                <a href="">
+                  <FaWordpress className="text-7xl text-center mt-4 mb-4 text-blue-400"/>
+                </a>
+                <a href="">
+                  <SiLaragon className="text-7xl text-center mt-8 mb-4 text-blue-400"/>
+                </a>
+            </div>
+
+            <div className="mx-auto gap-8 space-y-8">
+              <a href="">
+                  <FaFigma className="text-7xl text-center mb-4 text-gray-950"/>
+                </a>
+              <a href="">
+                  <SiCanva className="text-7xl text-center mb-4 text-indigo-600 mt-10"/>
+                </a>
+            </div>
+
+          </div>   
         </div>
+
+        
       </div>
     </section>
   );
