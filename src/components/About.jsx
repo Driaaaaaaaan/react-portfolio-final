@@ -149,6 +149,7 @@ const About = () => {
       <h1 className="text-white text-6xl md:text-7xl font-medium flex items-center justify-center mt-15">
         Tech Stack
       </h1>
+      <p className="text-white text-center mt-4 text-xl">These are the technologies I’ve recently used and continue to learn as I work on improving my development skills.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-4 h-full text-gray-900 mt-6">
         <div className="rounded-xl backdrop-blur-9xl bg-gray-900/50 p-5 shadow-2xl">
